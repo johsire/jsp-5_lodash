@@ -411,7 +411,10 @@ const purchases = [
   { month: "February", price: 23.65 }
 ];
 
-const purchasesByMonth = 0; // Use groupBy to group the purchases by the month that they were made.
+// const purchaseByOwner = _.groupBy(purchaseAry, 'owner');
+const purchasesByMonth = _.groupBy(purchases, 'month'); // Use groupBy to group the purchases by the month that they were made.
+
+console.log(purchasesByMonth);
 
 // Bonus Points
 const totalByMonth = 0; // Use the grouped purchasesByMonth and reduce to create a totalByMonth object.
