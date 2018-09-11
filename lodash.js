@@ -332,7 +332,7 @@ const breeFriendsEmails = [
 // let C = _.union(A, B);
 const listToSendEmailsTo = _.union(bobFriendsEmails, breeFriendsEmails); // Put lodash here to make list of the union of the two address.
 
-// console.log(listToSendEmailsTo); 
+console.log(listToSendEmailsTo); 
 
 // intersection
 //  Intersection lets us take two arrays, and create a new array that only
@@ -345,7 +345,9 @@ const listToSendEmailsTo = _.union(bobFriendsEmails, breeFriendsEmails); // Put 
 // Bob and Bree have decided that instead of inviting everyone they know to their
 // party. They are instead only going to invite those people that they both know.
 
-const listOfSharedEmails = 0; // Use lodash to create the list that are in both lists
+const listOfSharedEmails = _.intersection(bobFriendsEmails, breeFriendsEmails); // Use lodash to create the list that are in both lists
+
+console.log(listOfSharedEmails);
 
 // groupBy
 //  Group By lets us take an array of objects, and group then into groups based
